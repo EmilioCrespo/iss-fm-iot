@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  background-color: #E0E0E0;
+}
+ 
+.container {
+  background-color: #fafafa;
+  margin: 10px 10px 0px 10px;
+  padding: 2%;
+  max-width: none;
+}
+
+

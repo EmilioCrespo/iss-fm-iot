@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="incidences" routerLink="/incidences">
+        <div class="section">
+            <i class="fa fa-fire"></i>
+            <span style="margin-left: 20px;">Incidences:</span><span class="section_content">8</span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="icon"></div>
+    <div class="section">
+        <i class="fa fa-line-chart"></i>
+        <span style="margin-left: 10px;">Summary: </span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="chart_title">Temperature</div>
+        <app-multi-line-chart [datatype]="'temperature'"></app-multi-line-chart>
+    </div>
+    <div class="col-md-6" style="padding-left: 5%;">
+        <div class="chart_title">Luminosity</div>
+        <app-multi-line-chart [datatype]="'luminosity'"></app-multi-line-chart>
+    </div>
+</div>
+<div class="row" style="padding-top: 3%;">
+        <div class="col-md-6">
+            <div class="chart_title">Humidity</div>
+            <app-multi-line-chart [datatype]="'humidity'"></app-multi-line-chart>
+        </div>
+        <div class="col-md-6" style="padding-left: 5%;">
+            <div class="chart_title">Comfort</div>
+            <app-multi-line-chart [datatype]="'comfort'"></app-multi-line-chart>
+        </div>
+    </div>

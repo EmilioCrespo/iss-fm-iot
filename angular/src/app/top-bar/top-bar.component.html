@@ -1,0 +1,23 @@
+<div id="topbar">
+  <!--button (click)="displayMenu()" type="button" id="sidebarCollapse" class="navbar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button-->
+  <div class="row">
+    <div class="col-md-10" id="toggle_button">
+        <div *ngIf="collapsed" style="display: inline;">
+            <i class="fa fa-chevron-right fa-lg" (click)="changeSideMenu(); displayMenu()" style="cursor: pointer;"></i>
+          </div>
+          <div *ngIf="!collapsed" style="display: inline;">
+            <i class="fa fa-chevron-down fa-lg" (click)="changeSideMenu(); displayMenu()" style="cursor: pointer;"></i>
+          </div>
+          Proyecto FM + IoT - ISS 2019
+    </div>
+
+    <div class="col-md-1 help">
+        <span>Help</span>
+    </div>
+  </div>
+
+</div>

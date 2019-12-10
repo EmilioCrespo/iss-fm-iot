@@ -1,0 +1,16 @@
+<!-- Include top bar -->
+<app-top-bar></app-top-bar>
+
+<!-- Main content -->
+<div class="wrapper">
+
+  <!-- Include lateral menu -->
+  <app-sidebar style="margin-top: 10px;"></app-sidebar>
+
+  <!-- Include dynamic content -->
+  <div id="container" class="container">
+    <app-emergency [emergencyState]="emergency"></app-emergency>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

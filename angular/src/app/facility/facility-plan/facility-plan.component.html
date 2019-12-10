@@ -1,0 +1,56 @@
+<div class="row h-100">
+  <div id="oficina" class="h-100 col-4 room {{ roomSelected === 'office' ? 'selected' : ''}}
+    {{ (roomMeasures[0].value.temperature)?
+        (roomMeasures[0].value.temperature.value > 40)?
+        'emergency'
+        : (roomMeasures[0].value.temperature.value > 30)?
+          'hot'
+          : (roomMeasures[0].value.temperature.value > 17)?
+            'warm'
+            : 'cold'
+    : '' }}">
+    Office
+  </div>
+  <div id="vestibulo" class="h-100 col-4 room {{ roomSelected === 'hall' ? 'selected' : ''}}
+    {{ (roomMeasures[1].value.temperature)?
+        (roomMeasures[1].value.temperature.value > 40)?
+        'emergency'
+        : (roomMeasures[1].value.temperature.value > 30)?
+          'hot'
+          : (roomMeasures[1].value.temperature.value > 17)?
+            'warm'
+            : 'cold'
+    : '' }}">
+    Hall
+  </div>
+  <div  class="col-4 h-100">
+    <div class="row h-25">
+      <div id="almacen" class="align-middle col-12 room {{ roomSelected === 'warehouse' ? 'selected' : ''}}
+        {{ (roomMeasures[2].value.temperature)?
+            (roomMeasures[2].value.temperature.value > 40)?
+            'emergency'
+            : (roomMeasures[2].value.temperature.value > 30)?
+              'hot'
+              : (roomMeasures[2].value.temperature.value > 17)?
+                'warm'
+                : 'cold'
+        : '' }}">
+        Warehouse
+      </div>
+    </div>
+    <div class="row h-75">
+      <div id="comedor" class="col-12 room {{ roomSelected === 'dining_room' ? 'selected' : ''}}
+        {{ (roomMeasures[3].value.temperature)?
+            (roomMeasures[3].value.temperature.value > 40)?
+            'emergency'
+            : (roomMeasures[3].value.temperature.value > 30)?
+              'hot'
+              : (roomMeasures[3].value.temperature.value > 17)?
+                'warm'
+                : 'cold'
+        : '' }}">
+        Dining room
+      </div>
+    </div>
+  </div>
+</div>

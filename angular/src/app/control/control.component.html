@@ -1,0 +1,28 @@
+<div class="row">
+    <p class="col-md-2">Control</p>
+
+    <select id="room_selector" (change)="selectRoom($event)">
+        <option *ngFor="let it of rooms">{{it}}</option>
+    </select>
+</div>
+
+<div class="row">
+    <div class="col-md-2 value_controller">Temperature: </div>
+    <mat-slider min="0" max="40" step="1" value="23" thumbLabel (change)="onInputChangeTemp($event)"></mat-slider>
+</div>
+
+<div class="row">
+    <div class="col-md-2 value_controller">Luminosity: </div>
+    <mat-slider min="0" max="400" step="10" value="20" thumbLabel (change)="onInputChangeLight($event)"></mat-slider>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-gauge-chart #gauge_temp [name]="'Temperature'" [value]="23" [min]="'-20'" 
+            [max]="'50'" [delimiter]="28.6" [_sensor_id]="sensor_id"></app-gauge-chart>
+    </div>
+    <div class="col-md-6">
+        <app-gauge-chart #gauge_lum [name]="'Luminosity'" [value]="20" [min]="'0'" 
+            [max]="'400'" [delimiter]=50 [_sensor_id]="sensor_id"></app-gauge-chart>
+    </div>
+</div>

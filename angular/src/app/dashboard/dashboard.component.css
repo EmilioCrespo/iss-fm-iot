@@ -1,0 +1,20 @@
+.section{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: #00265C;
+}
+
+.section_content {
+    margin-left: 10px;
+    color: red;
+}
+
+.chart_title {
+    padding-bottom: 3%;
+}
+
+.incidences {
+    cursor: pointer;
+}

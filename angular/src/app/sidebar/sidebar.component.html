@@ -1,0 +1,62 @@
+<nav id="sidebar">
+  <ul class="list-unstyled components">
+    <p id="link_dashboard">
+      <a [routerLink]="['/']">Dashboard</a>
+    </p>
+  </ul>
+  <ul class="list-unstyled components">
+    <p><b style="font-weight: 900;">Facility</b></p>
+    <li class="active">
+      <a href="#facilityCategories" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Details</a>
+      <ul class="collapse list-unstyled" id="facilityCategories">
+        <li>
+          <a [routerLink]="['facility/hall']">Hall</a>
+        </li>
+        <li>
+          <a [routerLink]="['facility/office']">Office</a>
+        </li>
+        <li>
+          <a [routerLink]="['facility/dining_room']">Dining room</a>
+        </li>
+        <li>
+          <a [routerLink]="['facility/warehouse']">Warehouse</a>
+        </li>
+      </ul>
+    </li>
+    <li><a routerLink="/control">Control</a></li>
+  </ul>
+  <ul class="list-unstyled components">
+    <p><b style="font-weight: 900;">Administration</b></p>
+    <li><a href="#">Actives</a></li>
+    <li><a routerLink="/incidences">Incidences</a></li>
+    <li><a href="#">Orders</a></li>
+  </ul>
+</nav>
+
+<!--
+<div id="sidebar">
+  <a href="#">Dashboard</a>
+  <a href="#">Control</a>
+  Facility Management
+  <a href="#">Activos</a>
+  <a href="#">Incidencias</a>
+  <a href="#">...</a>
+</div>
+
+<script>
+    var display_sidebar = true;
+
+    function display_nav_menu() {
+        if (display_sidebar) {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("content").style.marginLeft = "250px";
+            display_sidebar = false;
+        }
+        else {
+            document.getElementById("sidebar").style.width = "50px";
+            document.getElementById("content").style.marginLeft = "50px";
+            display_sidebar = true;
+        }
+    }
+</script>
+-->

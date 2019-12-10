@@ -1,0 +1,91 @@
+<h5>New Incidence</h5>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div class="form-row">
+    <div class="col-2">
+      <label for="type">Type</label>
+      <select id="type" class="form-control"  formControlName="type">
+        <option>Lost</option>
+        <option>Emergency</option>
+        <option>Order</option>
+        <option>Fault</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="col-2">
+      <label for="room">Room</label>
+      <select id="room" class="form-control" formControlName="room">
+        <option>Hall</option>
+        <option>Office</option>
+        <option>Dining Room</option>
+        <option>Warehouse</option>
+      </select>
+    </div>
+
+    <div class="col-2">
+      <label for="priority">Priority</label>
+      <select id="priority" class="form-control" formControlName="priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+    </div>
+
+    <div class="col-5">
+      <label for="description">Description</label>
+      <input id="description" class="form-control" type="text" placeholder="Brief description" formControlName="description">
+    </div>
+
+    <div class="col-1">
+      <button type="submit" class="btn btn-primary align-bottom">Submit</button>
+    </div>
+  </div>
+</form>
+
+<!--
+<form class="form" method="post" action="">
+  <div class="form-row">
+    <div class="col-2">
+      <label for="type">Type</label>
+      <select class="form-control" id="type">
+        <option>Lost</option>
+        <option>Emergency</option>
+        <option>Order</option>
+        <option>Fault</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="col-2">
+      <label for="room">Room</label>
+      <select class="form-control" id="room">
+        <option>Hall</option>
+        <option>Office</option>
+        <option>Dining Room</option>
+        <option>Warehouse</option>
+      </select>
+    </div>
+
+    <div class="col-1">
+      <label>Priority</label>
+      <select class="form-control" id="priority">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div class="col-6">
+      <label>Description</label>
+      <input class="form-control" type="text" placeholder="Brief description">
+    </div>
+    <div class="col-1">
+      <button type="submit" class="btn btn-primary align-bottom">Submit</button>
+    </div>
+  </div>
+</form>
+
+
+-->

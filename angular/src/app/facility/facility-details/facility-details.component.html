@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-6">
+    <app-gauge-chart #gauge_temp [name]="'Temperature'" [value]="23" [min]="'-20'" [max]="'50'" [delimiter]="46"
+                     [_sensor_id]="'sensor_' + roomSelected"></app-gauge-chart>
+  </div>
+  <div class="col-6">
+    <app-gauge-chart #gauge_lum [name]="'Luminosity'" [value]="20" [min]="'0'" [max]="'400'" [delimiter]=50
+                     [_sensor_id]="'sensor_' + roomSelected"></app-gauge-chart>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <app-gauge-chart #gauge_hum [name]="'Humidity'" [value]="20" [min]="'0'" [max]="'100'" [delimiter]="20"
+                     [_sensor_id]="'sensor_' + roomSelected"></app-gauge-chart>
+  </div>
+  <div  id="comfort_chart" class="col-6">
+    <app-line-chart [sensorId]="'sensor_' + roomSelected" [datatype]="'comfort'"></app-line-chart>
+  </div>
+</div>

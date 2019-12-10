@@ -1,0 +1,72 @@
+[{
+    "timestamp":"23-11-2019 11:28:10",
+    "id":"Incidence #1",
+    "status":"Resolved",
+    "type":"Flooding",
+    "description":"Humidity over 70%",
+    "room":"Hall",
+    "priority":"High"
+},
+{
+    "timestamp":"23-11-2019 12:26:14",
+    "id":"Incidence #2",
+    "status":"Pending",
+    "type":"Low temperature",
+    "description":"Temperature below 15ºC",
+    "room":"Warehouse",
+    "priority":"Medium"
+},
+{
+    "timestamp":"23-11-2019 16:22:55",
+    "id":"Incidence #3",
+    "status":"Pending",
+    "type":"Low lightning",
+    "description":"Luminosity below 0.2",
+    "room":"Office",
+    "priority":"Medium"
+},
+{
+    "timestamp":"23-11-2019 17:18:10",
+    "id":"Incidence #4",
+    "status":"Pending",
+    "type":"High lightning",
+    "description":"Luminosity over 0.8",
+    "room":"Hall",
+    "priority":"Low"
+},
+{
+    "timestamp":"23-11-2019 19:45:00",
+    "id":"Incidence #5",
+    "status":"Resolved",
+    "type":"High temperature",
+    "description":"Temperature over 30ºC",
+    "room":"Dining room",
+    "priority":"Medium"
+},
+{
+    "timestamp":"23-11-2019 23:28:10",
+    "id":"Incidence #6",
+    "status":"Active",
+    "type":"Flooding",
+    "description":"Humidity over 70%",
+    "room":"Dining room",
+    "priority":"High"
+},
+{
+    "timestamp":"24-11-2019 08:11:24",
+    "id":"Incidence #7",
+    "status":"Resolved",
+    "type":"High temperature",
+    "description":"Temperature over 30ºC",
+    "room":"Hall",
+    "priority":"Medium"
+},
+{
+    "timestamp":"24-11-2019 17:33:10",
+    "id":"Incidence #8",
+    "status":"Pending",
+    "type":"Low lightning",
+    "description":"Luminosity below 0.2",
+    "room":"Dining room",
+    "priority":"Medium"
+}]

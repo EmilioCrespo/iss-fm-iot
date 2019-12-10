@@ -1,0 +1,26 @@
+.room {
+  border-style: solid;
+  border-width: 3px;
+}
+.selected {
+  border-color: chartreuse;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.emergency {
+  background-color: #dd2c00;
+}
+
+.hot {
+  background-color: #fb8c00;
+}
+
+.warm {
+  background-color: #ffd54f;
+}
+
+.cold {
+  background-color: #26c6da;
+}
